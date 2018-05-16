@@ -1,0 +1,30 @@
+setenv PYTHONPATH "/proj/sot/ska/arch/x86_64-linux_CentOS-5/lib/python2.7/site-packages"
+
+cd /data/mta4/Gratings/
+
+/data/mta4/Gratings/Script/run_grating.py
+
+cd /data/mta_www/mta_grat
+/data/mta4/Gratings/Script/create_g_list.py
+
+setenv IDL_PATH "+/usr/local/rsi/user_contrib/astron_Oct09/pro:+/home/mta/IDL:/home/nadams/pros:+/data/swolk/idl_libs:/home/mta/IDL/tara:widget_tools:utilities:event_browser"
+
+idl update
+
+cd /data/mta/www/mta_grat/Angles
+/data/mta/www/mta_grat/Angles/plot_grating_angles.py
+
+cd /data/mta/www/mta_grat/Focus 
+/data/mta/www/mta_grat/Focus/filters
+idl run
+
+cd /data/mta/www/mta_grat/Zero  
+/data/mta/www/mta_grat/Zero/filters_full
+idl run
+
+cd /data/mta/www/mta_grat/EdE   
+/data/mta/www/mta_grat/EdE/getdata
+/data/mta/www/mta_grat/EdE/create_ede_plots.py
+
+
+/data/mta4/Gratings/Script/update_top_gratings_html_page.py

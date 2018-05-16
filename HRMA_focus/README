@@ -1,0 +1,112 @@
+####################
+MTA SRC2 Monitoring
+####################
+
+This directory holds scripts to created HRMA focus related plots.
+
+Dir: data/mta4/www/DAILY/mta_src/Scripts/
+See also: https://cxc.cfa.harvard.edu/mta_days/mta_script_list/Spacecraft/bs_hrma_focus.html
+
+++++++++
+Scripts
+++++++++
+
+hrma_focus.py           ---- main script to run all other scripts
+                             it extracts evt2.fits files and runs celldetect 
+
+run.pro                 ---- set idl env to run src_mon.pro
+src_mon.pro             ---- read src_mon.lst (a list of src2.fits list) and 
+                             create src_mon.tab (summary ouput) (also update src_mon.txt)
+filelen.pro             ---- return the number of lines in filename
+
+run_txt.pro             ---- set idl env to run src_mon_txt.pro
+src_mon_txt.pro         ---- read src_mon.txt and run do_plots to create plots
+sdom.pro                ---- convert seconds since 1998:00:00:00.00 to days since 1999:204
+psf_time_anal.pro       ---- read constant coefficients from file, use to fit deg0 coeff
+do_plots.pro            ---- run standard src_mon plots
+src_mon_plots.pro       ---- plots observations against time
+
+
+
+++++++++++++++
+house_keeping:
+++++++++++++++
+
+src_mon.txt             ---- extracted data 
+years                   ---- a list of year with DOM start/stop dates
+                             this is used in psf_time_anal.pro to set # of year
+                             to be analyzed.
+
++++++++++
+Input 
++++++++++
+acsf*evt2.fits and hrcf*evt2.fits from archive
+
+
++++++++
+Output
++++++++
+
+./hosue_keeping/update src_mon.tx
+
+/data/mta4/www/DAILY/mta_src/
+-----------------------------
+
+index.html
+ACIS-I_psf_time.html
+as_all_psf_time.html
+hi_all_psf_time.html
+hs_all_psf_time.html
+tot_all_psf_time.html
+
+tot*.gif
+ACIS-I*.gif
+ai_*.gif
+as_*.gif
+hi_*.gif
+hs_*.gif
+
+Follwing html pages are static:
+
+hrci_rot.html
+aciss_rot.html
+hrcs_rot.html
+tot_rot.html
+acisi_eer.html
+aciss_eer.html
+hrci_eer.html
+hrcs_eer.html
+tot_eer.html
+acisi_rnd.html
+tot_rnd.html
+hrcs_rnd.html
+hrci_rnd.html
+aciss_rnd.html
+acisi_rot.html
+acisi_psf_time.html
+acisi_psf.html
+aciss_psf.html
+hrci_psf.html
+hrcs_psf.html
+tot_psf.html
+acisi_xy.html
+aciss_xy.html
+hrci_xy.html
+hrcs_xy.html
+tot_xy.html
+acisi_snr.html
+aciss_snr.html
+hrci_snr.html
+hrcs_snr.html
+tot_snr.html
+
+
+
++++++++++
+Cron Job
++++++++++
+
+mta @ r2d2-v
+
+2 19 * * 6  cd /data/mta4/www/DAILY/mta_src/Exc; /data/mta4/www/DAILY/mta_src/Scripts/hrma_focus.py >> $HOME/Logs/hrma_focus.cron 
+

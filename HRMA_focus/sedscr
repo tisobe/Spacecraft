@@ -1,0 +1,10 @@
+s/'xy_'+label+'.gif'/label+'_xy.gif'/
+s/'t_psfratio_'+label+'.gif'/label+'_t_psfratio.gif'/
+s/'d_psfratio'+label+'.gif'/label+'_d_psfratio.gif'/
+s/'t_rmaj_'+label+'.gif'/label+'_t_rmaj.gif'/
+s/'d_rmaj_'+label+'.gif'/label+'_d_rmaj.gif'/
+s/'t_snr_'+label+'.gif'/label+'_t_snr.gif'/
+s/'d_snr_'+label+'.gif'/label+'_d_snr.gif'/
+s/'rot_'+label+'.gif'/label+'_rot.gif'/
+s/'t_rot_'+label+'.gif'/label+'_t_rot.gif'/
+s/'d_rot_'+label+'.gif'/label+'_d_rot.gif'/

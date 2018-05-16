@@ -1,0 +1,46 @@
+#! /bin/sh
+
+for file in `tail +2 obslist`; do
+  ls $file/*summ*.txt >> xtmplst
+done
+
+if (test -s xtmplst); then
+   rm -f zo_acis_hetg.txt
+   rm -f zo_acis_letg.txt
+   rm -f zo_hrc_letg.txt
+
+   for file in `cat xtmplst`; do
+     if (/usr/xpg4/bin/grep -q "HETG" $file); then
+       if (/usr/xpg4/bin/grep -q "ACIS-S" $file); then
+         echo "$file" >> zo_acis_hetg.txt
+         grep "abs_start_time" $file >> zo_acis_hetg.txt
+         grep "zo_loc_x" $file >> zo_acis_hetg.txt
+         grep "zo_loc_y" $file >> zo_acis_hetg.txt
+         grep "zo_chip_x" $file >> zo_acis_hetg.txt
+         grep "zo_chip_y" $file >> zo_acis_hetg.txt
+       fi
+     fi
+     if (/usr/xpg4/bin/grep -q "LETG" $file); then
+       if (/usr/xpg4/bin/grep -q "ACIS-S" $file); then
+         echo "$file" >> zo_acis_letg.txt
+         grep "abs_start_time" $file >> zo_acis_letg.txt
+         grep "zo_loc_x" $file >> zo_acis_letg.txt
+         grep "zo_loc_y" $file >> zo_acis_letg.txt
+         grep "zo_chip_x" $file >> zo_acis_letg.txt
+         grep "zo_chip_y" $file >> zo_acis_letg.txt
+       fi
+       if (/usr/xpg4/bin/grep -q "HRC-S" $file); then
+         echo "$file" >> zo_hrc_letg.txt
+         grep "abs_start_time" $file >> zo_hrc_letg.txt
+         grep "zo_loc_x" $file >> zo_hrc_letg.txt
+         grep "zo_loc_y" $file >> zo_hrc_letg.txt
+         grep "zo_chip_x" $file >> zo_hrc_letg.txt
+         grep "zo_chip_y" $file >> zo_hrc_letg.txt
+       fi
+     fi
+   done
+fi
+
+rm -f xtmplst
+
+#end

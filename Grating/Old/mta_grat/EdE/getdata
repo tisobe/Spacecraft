@@ -1,0 +1,34 @@
+egrep '^[1-9,0]' ../*/*/*Sky_HEGp1_linelist.rdb | egrep -f obslist > hegp1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_HEGm1_linelist.rdb | egrep -f obslist > hegm1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_MEGp1_linelist.rdb | egrep -f obslist > megp1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_MEGm1_linelist.rdb | egrep -f obslist > megm1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_LEGpAll_linelist.rdb | egrep -f obslist > legp1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_LEGmAll_linelist.rdb | egrep -f obslist > legm1_all.txt
+
+#egrep '^[1-9,0]' ../*99/*/*Sky_HEGp1_linelist.rdb > hegp1_99.txt
+#egrep '^[1-9,0]' ../*99/*/*Sky_HEGm1_linelist.rdb > hegm1_99.txt
+#egrep '^[1-9,0]' ../*99/*/*Sky_MEGp1_linelist.rdb > megp1_99.txt
+#egrep '^[1-9,0]' ../*99/*/*Sky_MEGm1_linelist.rdb > megm1_99.txt
+#egrep '^[1-9,0]' ../*99/*/*Sky_LEGpAll_linelist.rdb > legp1_99.txt
+#egrep '^[1-9,0]' ../*99/*/*Sky_LEGmAll_linelist.rdb > legm1_99.txt
+#
+#egrep '^[1-9,0]' ../*00/*/*Sky_HEGp1_linelist.rdb > hegp1_00.txt
+#egrep '^[1-9,0]' ../*00/*/*Sky_HEGm1_linelist.rdb > hegm1_00.txt
+#egrep '^[1-9,0]' ../*00/*/*Sky_MEGp1_linelist.rdb > megp1_00.txt
+#egrep '^[1-9,0]' ../*00/*/*Sky_MEGm1_linelist.rdb > megm1_00.txt
+#egrep '^[1-9,0]' ../*00/*/*Sky_LEGpAll_linelist.rdb > legp1_00.txt
+#egrep '^[1-9,0]' ../*00/*/*Sky_LEGmAll_linelist.rdb > legm1_00.txt
+#
+#egrep '^[1-9,0]' ../*01/*/*Sky_HEGp1_linelist.rdb > hegp1_01.txt
+#egrep '^[1-9,0]' ../*01/*/*Sky_HEGm1_linelist.rdb > hegm1_01.txt
+#egrep '^[1-9,0]' ../*01/*/*Sky_MEGp1_linelist.rdb > megp1_01.txt
+#egrep '^[1-9,0]' ../*01/*/*Sky_MEGm1_linelist.rdb > megm1_01.txt
+#egrep '^[1-9,0]' ../*01/*/*Sky_LEGpAll_linelist.rdb > legp1_01.txt
+#egrep '^[1-9,0]' ../*01/*/*Sky_LEGmAll_linelist.rdb > legm1_01.txt
+#
+#egrep '^[1-9,0]' ../*02/*/*Sky_HEGp1_linelist.rdb > hegp1_02.txt
+#egrep '^[1-9,0]' ../*02/*/*Sky_HEGm1_linelist.rdb > hegm1_02.txt
+#egrep '^[1-9,0]' ../*02/*/*Sky_MEGp1_linelist.rdb > megp1_02.txt
+#egrep '^[1-9,0]' ../*02/*/*Sky_MEGm1_linelist.rdb > megm1_02.txt
+#egrep '^[1-9,0]' ../*02/*/*Sky_LEGpAll_linelist.rdb > legp1_02.txt
+#egrep '^[1-9,0]' ../*02/*/*Sky_LEGmAll_linelist.rdb > legm1_02.txt

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MTA Gratings Page</title>
+    <style>
+        .blue {
+            background-color:   #d9e6fc;
+        }
+        td {
+            padding: 5px;
+        }
+    </style>
+    <script language="JavaScript">
+        function WindowOpener(imgname) {
+            msgWindow = open("","displayname","toolbar=no,directories=no,menubar=no,location=no,scrollbars=no,status=no,,width=1050,height=550,resize=no");
+            msgWindow.document.clear();
+            msgWindow.document.write("<html><title>Trend plot:   "+imgname+"</TITLE>");
+            msgWindow.document.write("<body bgcolor='black'>");
+            msgWindow.document.write("<img src='./Angles/"+imgname+"' border =0 ><p></p></body></html>")
+            msgWindow.document.close();
+            msgWindow.focus();
+        }
+    </script>
+
+
+</head>
+<body style="width:95%;margin-left:10px; margin-right;10px;background-color:#FAEBD7;font-family:Georgia, "Times New Roman", Times, serif">
+
+<header>
+<h2 style='background-color:blue; color:#FAEBD7;'>
+MTA Gratings Trends
+</h2>
+
+
+<h3>Gratings Dispersion Angles</h3>
+
+<p>
+    Please Click to open the trending plot.
+</p>
+<table border=1>
+    <tr>
+        <td><a href="javascript:WindowOpener('hetg_all_angle.png')">HETG All _Angle</a>
+        <td><a href="javascript:WindowOpener('metg_all_angle.png')">METG All _Angle</a>
+        <td><a href="javascript:WindowOpener('letg_all_angle.png')">LETG All _Angle</a>
+    </tr>
+</table>
+
+
+<div style='padding-bottom: 20px;'>
+</div>
+
+<h3>Gratings Focus</h3>
+<p>
+Gratings observations are used to monitor the HRMA focus.  The links below
+show plots of zero order image and streak event PSF fits as determined by
+HAK for various detector/grating combinations.  Only observations of point
+sources are used.
+</p>
+
+<a href="./Focus/obslist">  List of observations used.</a>
+</p>
+
+<table border=1>
+    <tr align=center>
+        <th colspan=2><a href="./Focus/foc_acis_letg.html">ACIS_LETG</a></th>
+        <th colspan=2><a href="./Focus/foc_acis_hetg.html">ACIS_HETG</a></th>
+        <th colspan=2><a href="./Focus/foc_hrc_letg.html">HRC_LETG</a></th>
+    </tr>
+    <tr align=center>
+        <td colspan=1><font color=#00DDFF>    #VAL1#</font></td>
+        <td colspan=1><font color=#00DDFF>    #VAL2#</font></td>
+        <td colspan=1><font color=#00DDFF>    #VAL3#</font></td>
+        <td colspan=1><font color=#00DDFF>    #VAL4#</font></td>
+        <td colspan=1><font color=#00DDFF>    #VAL5#</font></td>
+        <td colspan=1><font color=#00DDFF>    #VAL6#</font></td>
+    </tr>
+    <tr align=center>
+        <td colspan=1>Streak trend</td>
+        <td colspan=1>Image trend</td>
+        <td colspan=1>Streak trend</td>
+        <td colspan=1>Image trend</td>
+        <td colspan=1>Streak trend</td>
+        <td colspan=1>Image trend</td>
+    </tr>
+<tr align=center><td colspan=6>microns/year</td></tr>
+</table>
+<!-- end data table -->
+</center>
+<br />
+
+
+
+<div style='padding-bottom: 20px;'>
+</div>
+
+<h3>Gratings E/de vs. E</h3>
+<p>
+We plot E/dE vs. E for fits to detected lines with fwhm_error/fwhm less than 0.15 for the plus and minus arms of HEG, MEG, and LEG. 
+</p>
+<ul>
+    <li><a href='./EdE/EdE_out/hetg_ede_plot.html'>Open HETG Eneergy - E/dE Trend page</a> </li>
+    <li><a href='./EdE/EdE_out/metg_ede_plot.html'>Open METG Eneergy - E/dE Trend page</a> </li>
+    <li><a href='./EdE/EdE_out/letg_ede_plot.html'>Open LETG Eneergy - E/dE Trend page</a> </li>
+</ul>
+
+
+
+<div style='padding-bottom: 20px;'>
+</div>
+
+
+<h3>Gratings Zero Order Positions</h3>
+<a href="./Zero/index.html">Open Zero Order Position Page</a>
+
+
+<div style='padding-bottom: 20px;'>
+</div>
+
+<h3>Links to All Grating  Observations</h3>
+
+<a href="./obs_index.html">Open Grating Observation Page</a>
+
+<div style='padding-bottom: 20px;'>
+</div>
+
+<hr />
+
+<p>
+If you have any questions about this page, please contact
+<a href='mailto:tisobe@cfa.harvard.edu'>tisobe@cfa.harvard.edu</a>
+</p>
+<p>
+<i>
+Last Update: Apr 3, 2018
+</i>
+</p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

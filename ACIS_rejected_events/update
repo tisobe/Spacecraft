@@ -1,0 +1,33 @@
+#! /bin/csh
+cd /data/mta/www/mta_acis_sci_run/Events_rej
+cd Data
+/bin/rm *fits
+find /dsops/ap/sdp/cache/*/acis/acis*stat1.fits -mtime -1 | sed -f sedscript > xcopy
+source xcopy
+chmod +w *fits
+cd /data/mta/www/mta_acis_sci_run/Events_rej
+/bin/rm run.pro
+ls Data/*fits | sed -f sedscript > run.pro
+cp CCD0_rej.dat CCD0_rej.bak
+cp CCD1_rej.dat CCD1_rej.bak
+cp CCD2_rej.dat CCD2_rej.bak
+cp CCD3_rej.dat CCD3_rej.bak
+cp CCD4_rej.dat CCD4_rej.bak
+cp CCD5_rej.dat CCD5_rej.bak
+cp CCD6_rej.dat CCD6_rej.bak
+cp CCD7_rej.dat CCD7_rej.bak
+cp CCD8_rej.dat CCD8_rej.bak
+cp CCD9_rej.dat CCD9_rej.bak
+echo 'exit' >> run.pro
+idl run.pro
+/bin/rm run.pro
+
+/usr/bin/perl ./cleanup.perl 
+
+echo 'rej_plot' > run.pro
+echo 'exit' >> run.pro
+
+idl run
+/bin/rm run.pro xdat
+
+./check_log

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://cxc.cfa.harvard.edu/mta/REPORTS/Template/mta.css" />
+<style>
+    td{padding:5px}
+    th{padding:5px; text-align:center}
+</style>
+
+<title>IRU gyro bias monitoring and trending</title>
+</head>
+
+<body text="#FFFFFF" bgcolor="#000000" link="#FF0000" vlink="#FFFF22" alink="#7500FF">
+
+<h1>IRU GYRO BIAS MONITORING AND TRENDING</h1>
+
+<p style='padding-bottom:20px'>
+Gyro bias drift rate is monitored and trended below for the period from January 2000.
+
+The "bias" links below show data from the total time span, yearly, and monthly plots 
+of the 1 hour averages. The drift over 1 hour is computed and plotted in histogram 
+form (see "hist" links).
+</p>
+
+<hr />
+
+<div style='padding-top:20px; padding-bottom:40px'>
+<h2>Mission Since Jan 2000</h2>
+
+<h3>Bias Plot</h3>
+<img src='https://cxc.cfa.harvard.edu/mta_days/mta_pcad/IRU/Plots/total_1h_bias.gif'>
+<h3>Histogram Plot</h3>
+<img src='https://cxc.cfa.harvard.edu/mta_days/mta_pcad/IRU/Plots/total_1h_hist.gif'>
+
+</div>
+<hr />
+
+<h2>Monthly Plots</h2>
+

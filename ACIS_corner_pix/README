@@ -1,0 +1,110 @@
+
+########################
+ACIS Corner Pixel Trends
+########################
+
+/data/mta/Script/Corner_pix/Scripts
+====================================
+The direcotry contains scripts which extract data and plot acis corner pixel trends
+
+See also: https://cxc.cfa.harvard.edu/mta_days/mta_script_list/Spacecraft/bs_acis_corner_pixels.html
+
+++++++++
+Scripts
+++++++++
+
+process_corner_pix.py       --- control script to call all other scripts
+
+cpix.pro                    --- make corner pixel centroid plots
+cpix_afaint.pro             --- make corner pixel centroid plots for afaint (almost faint) mode 
+                                    ie. VFAINT obs, but FAINT cpixs
+cpix_links.pro              --- custom find plot to link, and return array of links (not used)
+cpix_plot.pro               --- plotting routine
+curvefit.pro                --- Non-linear least squares fit
+flipy.pro                   --- flipy y coord from convert_coord output for html map
+get_data.pro                --- collect new acis evt files for cpix processing
+run_get_data.pro            --- setting idl for run_data.pro
+run_plot.pro                --- set idl for cpix_plot.pro
+
+recent_obs.perl             --- create a table web pages of the recent observations link to histograms
+move_old_files.py           --- move older histogram plots to Acis_Plots directory
+
+++++++
+Input
+++++++
+
+acis evt1 data are extacted from archive using arc4gl 
+
+
+
+/data/mta_www/mta_acis_sci_run/Corner_pix:
+===========================================
+
++++++++
+Output
++++++++
+
+
+cpix.html       --- updated main web page
+
+I2cp.dat        --- I2 corner pixel data
+I3cp.dat        --- I3 corner pixel data
+S2cp.dat        --- S2 corner pixel data
+S3cp.dat        --- S3 ocrner pixel data
+
+
+Week:           ---- directory holds recent indiviaul data histogram plots
+                        Example:
+                                acisf62673cp.gif
+                                acisf62673_I2hist.gif
+                                acisf62673_I3hist.gif
+                                acisf62673_S2hist.gif
+                                acisf62673_S3hist.gif
+                        index.html
+
+Acis_Plots:     ---- directory holds older histogram plots. All of them are zipped.
+
+Trend_Plots     ---- directory holds trends plots
+                                I2cp_afaint.gif
+                                I2cp_faint.gif
+                                I2cp.gif
+                                I2cp_vfaint.gif
+                                I3cp_afaint.gif
+                                I3cp_faint.gif
+                                I3cp.gif
+                                I3cp_vfaint.gif
+                                S2cp_afaint.gif
+                                S2cp_faint.gif
+                                S2cp.gif
+                                S2cp_vfaint.gif
+                                S3cp_afaint.gif
+                                S3cp_faint.gif
+                                S3cp.gif
+                                S3cp_vfaint.gif
+
+The following pages are static:
+            I2cp_afaint.html
+            I2cp_faint.html
+            I2cp.html
+            I2cp_vfaint.html
+            I3cp_afaint.html
+            I3cp_faint.html
+            I3cp.html
+            I3cp_vfaint.html
+            S2cp_afaint.html
+            S2cp_faint.html
+            S2cp.html
+            S2cp_vfaint.html
+            S3cp_afaint.html
+            S3cp_faint.html
+            S3cp.html
+            S3cp_vfaint.html
+
+
+Cron Job:
+    mta @ r2d2-v
+5 3 * * 1 cd /data/mta/Script/Corner_pix/Exc; /data/mta/Script/Corner_pix/Scripts/process_corner_pix.py >> corner_pix.cron 2>&1
+35 3 * * 1 cd /data/mta/Script/Corner_pix/Scripts/; move_old_files.py >> $HOME/Logs/corner_pix_move.cron 2>&1
+
+5 4 * * 1 cd /data/mta/Script/Corner_pix/Scripts/; perl recent_obs.perl >> $HOME/Logs/recent_obs.cron 2>&1
+

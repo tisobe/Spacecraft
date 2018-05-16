@@ -1,0 +1,48 @@
+
+This directory contains ACIS rejected event realated scripts and data. 
+
+Dir: /data/mta_www/mta_acis_sci_run/Events_rej/
+See also: https://cxc.cfa.harvard.edu/mta_days/mta_script_list/Spacecraft/bs_rej_evts.html
+
+Script:
+-------
+update          --- main control script
+rej_evts.pro    --- idl script to extract data
+rej_plot.pro    --- idl script to plot data
+
+sedscript       --- set up sed script called update
+./Data/sedscript--- set up sed script in Data/
+
+cleanup.perl    --- sort and CCD*_rej.dat and remove duplicated data
+check_log       --- the script to check potential problem. data needed: /home/mta/Logs/rej_evts.cron
+
+Other idl scripts called by above
+---------------------------------
+rej_evts_obs.pro
+cxtime.pro
+no_axis_labels.pro
+
+run.idl         --- created by update to run rej_evts.pro and/or rej_plot.pro
+
+Directories
+-----------
+Data            --- a directory in which the script copies data and process
+Restore_rej_evt_script  --- a directory contains the scripts to restored missing data
+                            read README in that directory for more details
+
+Output
+------
+CCD<ccd>_rej.dat    --- the data set
+CCD<ccd>_rej.bak    --- the back up data set one day before
+
+CCD<ccd>_rej_obs.gif    --- rejected events trend plots
+CCD<ccd>_rej_cti.gif    --- rejected events trend plots
+
+
+corn job
+--------
+cpu colossus-v
+usr mta
+
+5 1 * * *  cd /data/mta_www/mta_acis_sci_run/Events_rej; /data/mta_www/mta_acis_sci_run/Events_rej/update >> /home/mta/Logs/rej_evts.cron 2>&1
+

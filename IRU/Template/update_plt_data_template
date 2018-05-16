@@ -1,0 +1,6 @@
+print, "making plots ..."  ; debug
+bias_plot, '2000_2003_tot_bias_1h.fits', outroot='Plots/#PERIOD#', freq=3600, tstart=cxtime('#WSTART#T00:00:00','cal','sec'), tstop=cxtime('#WSTOP#T00:00:00','cal','sec'), ynum=1, rnum=1
+bias_plot, '2000_2003_tot_bias_1h.fits', outroot='Plots/#MONYR#_1h', freq=3600, tstart=cxtime('#MSTART#T00:00:00','cal','sec'), tstop=cxtime('#MSTOP#T00:00:00','cal','sec'), ynum=1, rnum=1
+bias_plot, '2000_2003_tot_bias_1h.fits', outroot='Plots/#YEAR1#', freq=3600, tstart=cxtime('#YEAR2#-01-01T00:00:00','cal','sec'), tstop=cxtime('#NYEAR#-01-01T00:00:00','cal','sec'), ynum=1, rnum=1
+bias_plot, '2000_2003_tot_bias_1h.fits', tstart=cxtime('2000-01-01T00:00:00','cal','sec'), outroot='Plots/total_1h', freq=3600,ynum=1, rnum=1
+exit

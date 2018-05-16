@@ -1,0 +1,30 @@
+
+This directory contains the script to restore acis rejected event data file.
+
+How to run:
+perl retore_rej_event.perl <start year> <end year>
+
+where <start year> is 0  for 2000
+      <end year>   si 15 for 2015
+      and the end year is exclusive so the data is restored up to the end of 2014.
+
+Make sure that Save directory is empty. Otherwise, the data will be appended
+to the existing data.
+
+The final data files will be deposited in "Data" directory.
+
+Restored data won't have a header; so add it manually. 
+
+TIME EVTSENT SD DROP_POS SD DROP_GRD SD THR_PIX SD BERR_SUM SD Navg OBS_ID CCD
+
+
+
+test_non_digit_entry.py
+-----------------------
+Occasionally, the idl script create ***** entry. use this script to check
+none digit entry.
+
+Usage:
+
+test_non_digit_entry.py <file name>
+

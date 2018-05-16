@@ -1,0 +1,2 @@
+rej_plot
+exit

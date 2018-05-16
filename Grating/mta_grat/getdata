@@ -1,0 +1,55 @@
+#! /bin/sh
+
+ls */*/*summ*txt > xgetlist
+
+if (test -s gratdata.db); then
+  mv gratdata.db gratdata_old.db
+fi
+
+echo " obsid|time|detector|grating|x_sky|y_sky|x_chip|y_chip|HEG|MEG|LEG" > xgetgratdata.db
+
+for file in `cat xgetlist`; do
+
+echo $file
+  sed -e 's/"//g' -e 's/ //g' $file > xgetfile
+
+  echo $file > xgettmp
+  obsid=`awk -F"/" '{print $2}' xgettmp` 
+
+  grep 'abs_start_time' xgetfile > xgettmp
+  time=`awk -F":" '{print $2}' xgettmp | awk -F"+" '{print $1}'`
+
+  grep 'detector' xgetfile > xgettmp
+  detector=`awk -F":" '{print $2}' xgettmp`
+
+  grep 'grating' xgetfile > xgettmp
+  grating=`awk -F":" '{print $2}' xgettmp`
+
+  grep 'zo_loc_x' xgetfile > xgettmp
+  x_sky=`awk -F":" '{print $2}' xgettmp | awk -F"+" '{print $1}'`
+
+  grep 'zo_loc_y' xgetfile > xgettmp
+  y_sky=`awk -F":" '{print $2}' xgettmp | awk -F"+" '{print $1}'`
+
+  grep 'zo_chip_x' xgetfile > xgettmp
+  x_chip=`awk -F":" '{print $2}' xgettmp | awk -F"+" '{print $1}'`
+
+  grep 'zo_chip_y' xgetfile > xgettmp
+  y_chip=`awk -F":" '{print $2}' xgettmp | awk -F"+" '{print $1}'`
+
+  grep 'heg_all_angle' xgetfile > xgettmp
+  heg=`awk -F":" '{print $2}' xgettmp | awk -F"+" '{print $1}'`
+
+  grep 'meg_all_angle' xgetfile > xgettmp
+  meg=`awk -F":" '{print $2}' xgettmp | awk -F"+" '{print $1}'`
+
+  grep 'leg_all_angle' xgetfile > xgettmp
+  leg=`awk -F":" '{print $2}' xgettmp | awk -F"+" '{print $1}'`
+
+  echo "$obsid|$time|$detector|$grating|$x_sky|$y_sky|$x_chip|$y_chip|$heg|$meg|$leg" >> xgetgratdata.db
+
+done
+
+sort -t'|' -k 2.1,2.1 -k 2.2,2.2 -k 2.3,2.3 -k 2.4,2.4 xgetgratdata.db -o gratdata.db
+
+rm -f xget*

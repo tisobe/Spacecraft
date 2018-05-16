@@ -1,0 +1,195 @@
+info           2015-07-21 01:14:22  ------------------------------------------------------------
+info           2015-07-21 01:14:22  Acorn Kernel Version 1.52
+info           2015-07-21 01:14:22  Command Line: /home/ascds/DS.release/bin/acorn -nOC otg-msids.list -f 2015_201_0212_201_1121_Dump_EM_98817 
+info           2015-07-21 01:14:22  Loading /home/ascds/DS.release/config/mta/data/cxcds_ipcl_translation.list
+info           2015-07-21 01:14:22  Loading Subsystem script otg-msids.list
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tmsrment.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tloc.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tsmpl.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tsc.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tcal_sw.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt_sw.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tes_sw.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tes.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tpc.txt
+info           2015-07-21 01:14:23  Loading /home/ascds/DS.release/config/tp_template/P011//tpp.txt
+info           2015-07-21 01:14:23  TraceLog started for PRIMARYOTG category.
+info           2015-07-21 01:14:23  TemplateMap initialized for Ipcl P011, Inst PI.
+info           2015-07-21 01:14:23  Found EHS header during first read of minor frame
+info           2015-07-21 01:14:39  Terminate Stripper.
+               2015-07-21 01:14:39   shut down.
+info           2015-07-21 01:14:40  ------------------------------------------------------------
+info           2015-07-21 01:14:40  Acorn Kernel Version 1.52
+info           2015-07-21 01:14:40  Command Line: /home/ascds/DS.release/bin/acorn -nOC otg-msids.list -f 2015_201_1119_201_1926_Dump_EM_99172 
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/mta/data/cxcds_ipcl_translation.list
+info           2015-07-21 01:14:40  Loading Subsystem script otg-msids.list
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tmsrment.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tloc.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tsmpl.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tsc.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tcal_sw.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt_sw.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tes_sw.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tes.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tpc.txt
+info           2015-07-21 01:14:40  Loading /home/ascds/DS.release/config/tp_template/P011//tpp.txt
+info           2015-07-21 01:14:40  TraceLog started for PRIMARYOTG category.
+info           2015-07-21 01:14:40  TemplateMap initialized for Ipcl P011, Inst PI.
+info           2015-07-21 01:14:40  Found EHS header during first read of minor frame
+info           2015-07-21 01:14:55  Terminate Stripper.
+               2015-07-21 01:14:55   shut down.
+info           2015-07-21 01:14:56  ------------------------------------------------------------
+info           2015-07-21 01:14:56  Acorn Kernel Version 1.52
+info           2015-07-21 01:14:56  Command Line: /home/ascds/DS.release/bin/acorn -nOC otg-msids.list -f 2015_201_1924_202_0042_Dump_EM_99342 
+info           2015-07-21 01:14:56  Loading /home/ascds/DS.release/config/mta/data/cxcds_ipcl_translation.list
+info           2015-07-21 01:14:56  Loading Subsystem script otg-msids.list
+info           2015-07-21 01:14:56  Loading /home/ascds/DS.release/config/tp_template/P011//tmsrment.txt
+info           2015-07-21 01:14:56  Loading /home/ascds/DS.release/config/tp_template/P011//tloc.txt
+info           2015-07-21 01:14:56  Loading /home/ascds/DS.release/config/tp_template/P011//tsmpl.txt
+info           2015-07-21 01:14:56  Loading /home/ascds/DS.release/config/tp_template/P011//tsc.txt
+info           2015-07-21 01:14:56  Loading /home/ascds/DS.release/config/tp_template/P011//tcal_sw.txt
+info           2015-07-21 01:14:57  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt_sw.txt
+info           2015-07-21 01:14:57  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt.txt
+info           2015-07-21 01:14:57  Loading /home/ascds/DS.release/config/tp_template/P011//tes_sw.txt
+info           2015-07-21 01:14:57  Loading /home/ascds/DS.release/config/tp_template/P011//tes.txt
+info           2015-07-21 01:14:57  Loading /home/ascds/DS.release/config/tp_template/P011//tpc.txt
+info           2015-07-21 01:14:57  Loading /home/ascds/DS.release/config/tp_template/P011//tpp.txt
+info           2015-07-21 01:14:57  TraceLog started for PRIMARYOTG category.
+info           2015-07-21 01:14:57  TemplateMap initialized for Ipcl P011, Inst PI.
+info           2015-07-21 01:14:57  Found EHS header during first read of minor frame
+info           2015-07-21 01:15:10  Terminate Stripper.
+               2015-07-21 01:15:10   shut down.
+info           2015-07-21 01:15:11  ------------------------------------------------------------
+info           2015-07-21 01:15:11  Acorn Kernel Version 1.52
+info           2015-07-21 01:15:11  Command Line: /home/ascds/DS.release/bin/acorn -nOC msids.list -f 2015_201_0212_201_1121_Dump_EM_98817 
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/mta/data/cxcds_ipcl_translation.list
+info           2015-07-21 01:15:11  Loading Subsystem script msids.list
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tmsrment.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tloc.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tsmpl.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tsc.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tcal_sw.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt_sw.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tes_sw.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tes.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tpc.txt
+info           2015-07-21 01:15:11  Loading /home/ascds/DS.release/config/tp_template/P011//tpp.txt
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5HSE202
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EHSE106
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EHSE300
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EHSE100
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EHSE2
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00488
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00500
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00656
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00668
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00672
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00688
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00680
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00692
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00752
+info           2015-07-21 01:15:11  Trace placed on 5EP00016, counter for 5EP00764
+info           2015-07-21 01:15:11  TraceLog started for PRIMARYCCDM category.
+info           2015-07-21 01:15:11  TraceLog started for PRIMARYPCAD category.
+info           2015-07-21 01:15:11  TraceLog started for PRIMARYIRU category.
+info           2015-07-21 01:15:11  TraceLog started for PRIMARYEPHIN category.
+info           2015-07-21 01:15:11  TraceLog started for PRIMARYACIS category.
+info           2015-07-21 01:15:11  TraceLog started for PRIMARYACIS_STAT category.
+info           2015-07-21 01:15:11  TraceLog started for MUPSMUPS1 category.
+info           2015-07-21 01:15:11  TraceLog started for MUPSMUPS2 category.
+info           2015-07-21 01:15:11  TraceLog started for ELBILOW category.
+info           2015-07-21 01:15:11  TemplateMap initialized for Ipcl P011, Inst PI.
+info           2015-07-21 01:15:11  Found EHS header during first read of minor frame
+info           2015-07-21 01:15:36  Terminate Stripper.
+               2015-07-21 01:15:36   shut down.
+info           2015-07-21 01:15:36  ------------------------------------------------------------
+info           2015-07-21 01:15:36  Acorn Kernel Version 1.52
+info           2015-07-21 01:15:36  Command Line: /home/ascds/DS.release/bin/acorn -nOC msids.list -f 2015_201_1119_201_1926_Dump_EM_99172 
+info           2015-07-21 01:15:36  Loading /home/ascds/DS.release/config/mta/data/cxcds_ipcl_translation.list
+info           2015-07-21 01:15:36  Loading Subsystem script msids.list
+info           2015-07-21 01:15:36  Loading /home/ascds/DS.release/config/tp_template/P011//tmsrment.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tloc.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tsmpl.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tsc.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tcal_sw.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt_sw.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tes_sw.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tes.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tpc.txt
+info           2015-07-21 01:15:37  Loading /home/ascds/DS.release/config/tp_template/P011//tpp.txt
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5HSE202
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EHSE106
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EHSE300
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EHSE100
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EHSE2
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00488
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00500
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00656
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00668
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00672
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00688
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00680
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00692
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00752
+info           2015-07-21 01:15:37  Trace placed on 5EP00016, counter for 5EP00764
+info           2015-07-21 01:15:37  TraceLog started for PRIMARYCCDM category.
+info           2015-07-21 01:15:37  TraceLog started for PRIMARYPCAD category.
+info           2015-07-21 01:15:37  TraceLog started for PRIMARYIRU category.
+info           2015-07-21 01:15:37  TraceLog started for PRIMARYEPHIN category.
+info           2015-07-21 01:15:37  TraceLog started for PRIMARYACIS category.
+info           2015-07-21 01:15:37  TraceLog started for PRIMARYACIS_STAT category.
+info           2015-07-21 01:15:37  TraceLog started for MUPSMUPS1 category.
+info           2015-07-21 01:15:37  TraceLog started for MUPSMUPS2 category.
+info           2015-07-21 01:15:37  TraceLog started for ELBILOW category.
+info           2015-07-21 01:15:37  TemplateMap initialized for Ipcl P011, Inst PI.
+info           2015-07-21 01:15:37  Found EHS header during first read of minor frame
+info           2015-07-21 01:15:59  Terminate Stripper.
+               2015-07-21 01:15:59   shut down.
+info           2015-07-21 01:16:00  ------------------------------------------------------------
+info           2015-07-21 01:16:00  Acorn Kernel Version 1.52
+info           2015-07-21 01:16:00  Command Line: /home/ascds/DS.release/bin/acorn -nOC msids.list -f 2015_201_1924_202_0042_Dump_EM_99342 
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/mta/data/cxcds_ipcl_translation.list
+info           2015-07-21 01:16:00  Loading Subsystem script msids.list
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tmsrment.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tloc.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tsmpl.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tsc.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tcal_sw.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt_sw.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tlmt.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tes_sw.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tes.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tpc.txt
+info           2015-07-21 01:16:00  Loading /home/ascds/DS.release/config/tp_template/P011//tpp.txt
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5HSE202
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EHSE106
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EHSE300
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EHSE100
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EHSE2
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00488
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00500
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00656
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00668
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00672
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00688
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00680
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00692
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00752
+info           2015-07-21 01:16:00  Trace placed on 5EP00016, counter for 5EP00764
+info           2015-07-21 01:16:00  TraceLog started for PRIMARYCCDM category.
+info           2015-07-21 01:16:00  TraceLog started for PRIMARYPCAD category.
+info           2015-07-21 01:16:00  TraceLog started for PRIMARYIRU category.
+info           2015-07-21 01:16:00  TraceLog started for PRIMARYEPHIN category.
+info           2015-07-21 01:16:00  TraceLog started for PRIMARYACIS category.
+info           2015-07-21 01:16:00  TraceLog started for PRIMARYACIS_STAT category.
+info           2015-07-21 01:16:00  TraceLog started for MUPSMUPS1 category.
+info           2015-07-21 01:16:00  TraceLog started for MUPSMUPS2 category.
+info           2015-07-21 01:16:00  TraceLog started for ELBILOW category.
+info           2015-07-21 01:16:00  TemplateMap initialized for Ipcl P011, Inst PI.
+info           2015-07-21 01:16:00  Found EHS header during first read of minor frame
+info           2015-07-21 01:16:18  Terminate Stripper.
+               2015-07-21 01:16:18   shut down.

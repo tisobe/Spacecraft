@@ -1,0 +1,14 @@
+
+This repository contains the sets of scripts related Chandra Spacecraft monitoring quantities.
+
+ACA                         --- create ACA related data
+ACIS_corner_pix             --- extract data and plot acis corner pixel trends
+ACIS_radation_correlations  --- creates ACIS radiation related plots
+ACIS_rejected_events        --- extract ACIS rejected event data
+Grating                     --- process grating data
+HRMA_focus                  --- create HRMA focus related plots
+IRU                         --- update /data/mta4/www/DAILY/mta_pcad/IRU/update_plt_data.pro
+MTA_Deriv                   --- update trending data in the directory /data/mta4/Deriv
+OTG                         --- extract OTG and CCDM related data from dump data (*Dump_EM_*)
+SIM_movement_trending       --- related to creation of SIM movement plots in ..../mta_sim/
+SIM_temperature             --- collect sim translation/temperature data and creates trend plots

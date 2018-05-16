@@ -1,0 +1,6 @@
+egrep '^[1-9,0]' ../*/*/*Sky_HEGp1_linelist.rdb   | egrep -f obslist > hegp1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_HEGm1_linelist.rdb   | egrep -f obslist > hegm1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_MEGp1_linelist.rdb   | egrep -f obslist > megp1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_MEGm1_linelist.rdb   | egrep -f obslist > megm1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_LEGpAll_linelist.rdb | egrep -f obslist > legp1_all.txt
+egrep '^[1-9,0]' ../*/*/*Sky_LEGmAll_linelist.rdb | egrep -f obslist > legm1_all.txt

@@ -1,0 +1,1 @@
+TERM=dummy; export TERM; /bin/tcsh  <  /data/mta_www/mta_grat/Focus/foc_main_script

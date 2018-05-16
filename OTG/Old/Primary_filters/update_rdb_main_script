@@ -1,0 +1,6 @@
+cd /data/mta/Script/Dumps/Scripts/
+
+source /proj/sot/ska/bin/ska_envs.csh
+
+/data/mta/Script/Dumps/Scripts/update_rdb.py
+

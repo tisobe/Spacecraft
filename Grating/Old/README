@@ -1,0 +1,64 @@
+
+This set of script process grating data
+
+Dir: /data/mta4/Gratings/Script
+See also: https://cxc.cfa.harvard.edu/mta_days/mta_script_list/Spacecraft/bs_gratings.html
+
+Scripts
+-------
+run_grating_wrap_script --- environment setting
+
+run_grating_main_script --- running scripts
+
+run_grating.py  ---- the main script to run the process
+
+    input:    none but extract fits data using arc4gl
+              we also need to two template files in house_keeping directory:
+                arc_template
+                pl_template
+
+        Note: this script extract data from a "previous" month
+              so if you run this script on Apr 2015, the data
+              extracted are Mar 2015.
+
+    output:
+             /data/mta/www/mta_grat/<Mon><yy>/<stamp>/
+            e.g. see /data/mta/www/mta_grat/Apr15/15706/*
+
+Related Script (written by B.S.):
+
+/data/mta/www/mta_grat/update --- this script runs several idl script
+    you must be in /data/mta/www/mta_grat directory to run this script
+
+
+Environment Setting
+-------------------
+
+The script needs an access to /proj/sot/ska/arch/x86_64-linux_CentOS-5/lib/python2.7/*
+In run_grating_main_script, it sources:
+        source /proj/sot/ska/bin/ska_envs.csh
+
+Cron Job
+--------
+32 2 3 * * cd /data/mta4/Gratings/;  /data/mta4/Gratings/Script/run_grating_wrap_script >> $HOME/Logs/run_grating_ti.cron 2>&1
+
+
+Note from Brad (May 7, 2015 email)
+-------------------------------------
+
+> cd /data/mta4/Gratings
+> vi arc  - enter dates you want
+> mkdir Apr15 - this can be called anything, I just used to do it by month
+> source ~/.ascrc
+> arc4gl -Ubrad -iarc
+> source ~/.mta
+> \rm *src1a*
+> vi mkcommand.pl - change month to whatever you called dir
+> mkcommand.pl - this makes the idl commands from all the fits files in the dir
+> cp mkcommand.out command.pro - extra step (mkcommand.pl could write to command.pro, but I like to check it first)
+> idl command
+> mv Apr15 /data/mta/www/mta_grat
+\rm *gz
+> cd /data/mta/www/mta_grat
+> ls Apr15 >> Angles/obslist - add new files to Angles/obslist, EdE/obslist, Focus/obslist, and Zero/obslist
+> update

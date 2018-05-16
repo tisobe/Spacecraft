@@ -1,0 +1,27 @@
+#! /bin/sh
+
+for file in `tail +2 obslist`; do
+  ls $file/*summ*.txt >> xtmplst
+done
+
+if (test -s xtmplst); then
+   rm -f hetg_angles.txt letg_angles.txt
+
+   for file in `cat xtmplst`; do
+     if (/usr/xpg4/bin/grep -q "HETG" $file); then
+       echo "$file" >> hetg_angles.txt
+       grep "abs_start_time" $file >> hetg_angles.txt
+       grep "heg_all_angle" $file >> hetg_angles.txt
+       grep "meg_all_angle" $file >> hetg_angles.txt
+     fi
+     if (/usr/xpg4/bin/grep -q "LETG" $file); then
+       echo "$file" >> letg_angles.txt
+       grep "abs_start_time" $file >> letg_angles.txt
+       grep "leg_all_angle" $file >> letg_angles.txt
+     fi
+   done
+fi
+
+rm -f xtmplst
+
+#end

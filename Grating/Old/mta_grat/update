@@ -1,0 +1,11 @@
+getdata
+idl update.pro
+cd Angles
+filters
+idl run
+cd ../Zero
+filters
+idl run
+cd ../EdE
+getdata
+idl run

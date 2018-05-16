@@ -1,0 +1,10 @@
+setenv PYTHONPATH "/proj/sot/ska/arch/x86_64-linux_CentOS-5/lib/python2.7/site-packages"
+
+cd /data/mta/Script/Corner_pix/Exc/
+/data/mta/Script/Corner_pix/Scripts/process_corner_pix.py 
+
+cd /data/mta/Script/Corner_pix/Scripts/
+move_old_files.py
+perl recent_obs.perl
+plot_corner_pix_trend.py
+

@@ -1,0 +1,22 @@
+
+Dir: /data/mta4/www/DAILY/mta_pcad/IRU/
+See also: https://cxc.cfa.harvard.edu/mta_days/mta_script_list/Spacecraft/bs_iru_update.html
+
+The script to update /data/mta4/www/DAILY/mta_pcad/IRU/update_plt_data.pro
+
+Scirpt:
+update_weekly_run_file.py --- this will creates updated update_plt_data.pro
+                              for the nearest Thu-Wed period.
+
+Directory:
+----------
+Template    ---- a directory containg a template
+
+Date needed:
+------------
+Template/update_plt_data_template
+
+Environment setting
+-------------------
+None, but if it fails, set:
+setenv PYTHONPATH "/proj/sot/ska/arch/x86_64-linux_CentOS-5/lib/python2.7/site-packages:"

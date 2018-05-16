@@ -1,0 +1,12 @@
+rej_evts_obs, 'Data/acisf115810764N001_1_exr0.fits', /plotx
+write_gif, 'obs2077_s3.gif', tvrd()
+rej_evts_obs, 'Data/acisf115810764N001_2_exr0.fits', /plotx
+write_gif, 'obs2077_s1.gif', tvrd()
+rej_evts_obs, 'Data/acisf115810764N001_3_exr0.fits', /plotx
+write_gif, 'obs2077_s2.gif', tvrd()
+rej_evts_obs, 'Data/acisf116036642N001_1_exr0.fits', /plotx
+write_gif, 'obs2064_s3.gif', tvrd()
+rej_evts_obs, 'Data/acisf116036642N001_2_exr0.fits', /plotx
+write_gif, 'obs2064_s1.gif', tvrd()
+rej_evts_obs, 'Data/acisf116036642N001_3_exr0.fits', /plotx
+write_gif, 'obs2064_s2.gif', tvrd()

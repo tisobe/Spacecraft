@@ -1,0 +1,18 @@
+#! /bin/csh
+date
+echo "getting new data ..."
+/bin/rm list_mk_avg
+find /dsops/ap/sdp/cache/*/pcad/pcad*_3_*.fits -mtime -9 | grep -v static > list_mk_avg
+#find Data/pcad*_3_*.fits.gz -mtime -11  > list_mk_avg
+#setenv IDL_PATH "/home/mta/IDL:${IDL_PATH}"
+#IDL_PATH=/home/mta/IDL
+#export IDL_PATH
+setenv IDL_PATH "+/usr/local/rsi/user_contrib/astron_Oct09/pro:/home/mta/IDL:+/home/nadams/pros:+/data/swolk/idl_libs"
+# mrdfits can't gunzip in a cron jobs, so gunzip yourself
+gunzip 2000_2003_tot_bias_1h.fits.gz
+gunzip 2000_2003_tot_bias_5m.fits.gz
+gunzip recent_bias_5m.fits.gz
+idl update_get_data
+idl update_plt_data
+gzip -f *fits
+./check_log

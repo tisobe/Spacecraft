@@ -1,0 +1,53 @@
+#! /bin/sh
+
+#for file in `tail +2 obslist`; do
+for file in `cat obslist`; do
+  ls $file/obsid*summ*.html >> xtmplst
+done
+
+if (test -s xtmplst); then
+   rm -f foc_acis_hetg.txt
+   rm -f foc_acis_letg.txt
+   rm -f foc_hrc_letg.txt
+
+   for file in `cat xtmplst`; do
+     if (grep -q "HETG" $file); then
+       if (grep -q "ACIS-S" $file); then
+         echo "$file" >> foc_acis_hetg.txt
+         grep "Start time" $file | head -1 >> foc_acis_hetg.txt
+         grep "AX LRF at 10" $file >> foc_acis_hetg.txt
+         grep "AX LRF at 50" $file >> foc_acis_hetg.txt
+         grep "Streak LRF at 10" $file >> foc_acis_hetg.txt
+         grep "Streak LRF at 50" $file >> foc_acis_hetg.txt
+         grep "Gaussian fit FWHM" $file >> foc_acis_hetg.txt
+         grep "FWHM error" $file >> foc_acis_hetg.txt
+       fi
+     fi
+     if (grep -q "LETG" $file); then
+       if (grep -q "ACIS-S" $file); then
+         echo "$file" >> foc_acis_letg.txt
+         grep "Start time" $file | head -1 >> foc_acis_letg.txt
+         grep "AX LRF at 10" $file >> foc_acis_letg.txt
+         grep "AX LRF at 50" $file >> foc_acis_letg.txt
+         grep "Streak LRF at 10" $file >> foc_acis_letg.txt
+         grep "Streak LRF at 50" $file >> foc_acis_letg.txt
+         grep "Gaussian fit FWHM" $file >> foc_acis_letg.txt
+         grep "FWHM error" $file >> foc_acis_letg.txt
+       fi
+       if (grep -q "HRC-S" $file); then
+         echo "$file" >> foc_hrc_letg.txt
+         grep "Start time" $file | head -1 >> foc_hrc_letg.txt
+         grep "AX LRF at 10" $file >> foc_hrc_letg.txt
+         grep "AX LRF at 50" $file >> foc_hrc_letg.txt
+         grep "Streak LRF at 10" $file >> foc_hrc_letg.txt
+         grep "Streak LRF at 50" $file >> foc_hrc_letg.txt
+         grep "Gaussian fit FWHM" $file >> foc_hrc_letg.txt
+         grep "FWHM error" $file >> foc_hrc_letg.txt
+       fi
+     fi
+   done
+fi
+
+rm -f xtmplst
+
+#end

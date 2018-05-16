@@ -1,0 +1,1 @@
+M=dummy; export TERM; /bin/tcsh  < /data/mta4/www/DAILY/mta_pcad/IRU/Script/iru_main_script

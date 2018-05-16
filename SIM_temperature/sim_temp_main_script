@@ -1,0 +1,12 @@
+cd /data/mta/Script/SIM/Exc/
+
+rm -rf param
+mkdir  param
+
+/data/mta/Script/SIM/Scripts/run_sim_temp.py
+
+/data/mta/Script/SIM/Scripts/plot_sim_temp_data.py
+
+/data/mta/Script/SIM/Scripts/update_html.py
+
+

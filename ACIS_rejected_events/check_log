@@ -1,0 +1,11 @@
+#! /bin/sh
+
+logfile=/home/mta/Logs/rej_evts.cron
+
+if (/usr/xpg4/bin/grep -q halted $logfile); then
+  DT=`date +'%Y%m%d_%T'`
+  cp $logfile $logfile$DT
+  echo "rej_evts error. check $logfile$DT." | mailx -s rej_evts_error brad\@head-cfa.harvard.edu
+  #echo "dtrend error. check $logfile."  # debug
+fi
+#end
